@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://cpkcotb1jq6at"]
+
+[ext_resource type="Texture2D" uid="uid://ck0vpeqej1uyy" path="res://art/MEGA TUBERIA 1.png" id="1_7dyb3"]
+[ext_resource type="PackedScene" uid="uid://etls8tbq7fqb" path="res://escenas/Dusty/dusty.tscn" id="2_ahhdk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ahhdk"]
+radius = 58.706543
+height = 1450.7494
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_wpukg"]
+a = Vector2(-66, 98)
+b = Vector2(436, 98)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_bfali"]
+b = Vector2(810.88403, 223.1922)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_dn0x7"]
+a = Vector2(-7, 11)
+b = Vector2(155, 11)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ahhdk"]
+size = Vector2(7.5, 51)
+
+[node name="Nivel1" type="StaticBody2D" unique_id=1090349578]
+
+[node name="MegaTuberia1" type="Sprite2D" parent="." unique_id=1969507613]
+position = Vector2(566.00006, 313.00003)
+scale = Vector2(0.27254203, 0.3225919)
+texture = ExtResource("1_7dyb3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1686291681]
+position = Vector2(117.99997, 289)
+scale = Vector2(0.27254203, 0.3225919)
+shape = SubResource("CapsuleShape2D_ahhdk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=848752835]
+position = Vector2(197, 227)
+shape = SubResource("SegmentShape2D_wpukg")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1893452432]
+position = Vector2(639, 325)
+scale = Vector2(0.27254203, 0.3225919)
+shape = SubResource("SegmentShape2D_bfali")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="." unique_id=269294019]
+position = Vector2(867, 388)
+shape = SubResource("SegmentShape2D_dn0x7")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="." unique_id=715050061]
+position = Vector2(219, 346)
+shape = SubResource("RectangleShape2D_ahhdk")
+
+[node name="Dusty" parent="." unique_id=1836463466 instance=ExtResource("2_ahhdk")]
+position = Vector2(218, 292)
+collision_mask = 1
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="." unique_id=1243704610]
+position = Vector2(635, 345)
+shape = SubResource("RectangleShape2D_ahhdk")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="." unique_id=1664259638]
+position = Vector2(518, 345)
+shape = SubResource("RectangleShape2D_ahhdk")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="." unique_id=147329645]
+position = Vector2(744, 379)
+shape = SubResource("RectangleShape2D_ahhdk")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="." unique_id=1005074776]
+position = Vector2(857, 417)
+shape = SubResource("RectangleShape2D_ahhdk")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="." unique_id=24097144]
+position = Vector2(1320, 2070)
+shape = SubResource("RectangleShape2D_ahhdk")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="." unique_id=1016707028]
+position = Vector2(1540, 2415)
+shape = SubResource("RectangleShape2D_ahhdk")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="." unique_id=1823557841]
+position = Vector2(1760, 2760)
+shape = SubResource("RectangleShape2D_ahhdk")

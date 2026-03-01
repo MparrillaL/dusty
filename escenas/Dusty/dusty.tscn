@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://etls8tbq7fqb"]
+
+[ext_resource type="Script" uid="uid://t1qnpkxyqskf" path="res://escenas/Dusty/dusty.gd" id="1_dgefs"]
+[ext_resource type="SpriteFrames" uid="uid://bwt508mv37ldc" path="res://escenas/Dusty/spriteframes_dusty.tres" id="1_mhjfq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mhjfq"]
+size = Vector2(19, 46.5)
+
+[node name="Dusty" type="CharacterBody2D" unique_id=1836463466 node_paths=PackedStringArray("animacion")]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_dgefs")
+animacion = NodePath("animacion")
+
+[node name="animacion" type="AnimatedSprite2D" parent="." unique_id=286345957]
+texture_filter = 2
+position = Vector2(4.9999995, -6.9999995)
+scale = Vector2(0.2, 0.2)
+sprite_frames = ExtResource("1_mhjfq")
+animation = &"andar"
+frame_progress = 0.828672
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1791040850]
+position = Vector2(0.5, 0.75)
+shape = SubResource("RectangleShape2D_mhjfq")
