@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b76k3p1mxfk1i"
-path="res://.godot/imported/RATA IDLE SPRITES.png-23d90125d41a9582faba7d7b4b9a0651.ctex"
+uid="uid://biuh1onwd8q2p"
+path="res://.godot/imported/RATA IDLE SPRITES 2.png-88ff63b0e6b3cbaa6112413e03c19b31.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/RATA IDLE SPRITES.png"
-dest_files=["res://.godot/imported/RATA IDLE SPRITES.png-23d90125d41a9582faba7d7b4b9a0651.ctex"]
+source_file="res://sprites/RATA IDLE SPRITES 2.png"
+dest_files=["res://.godot/imported/RATA IDLE SPRITES 2.png-88ff63b0e6b3cbaa6112413e03c19b31.ctex"]
 
 [params]
 
