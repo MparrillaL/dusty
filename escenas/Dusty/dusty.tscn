@@ -3,8 +3,9 @@
 [ext_resource type="Script" uid="uid://t1qnpkxyqskf" path="res://escenas/Dusty/dusty.gd" id="1_dgefs"]
 [ext_resource type="SpriteFrames" uid="uid://bwt508mv37ldc" path="res://escenas/Dusty/spriteframes_dusty.tres" id="1_mhjfq"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mhjfq"]
-size = Vector2(19, 46.5)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dgefs"]
+radius = 8.0
+height = 48.5
 
 [node name="Dusty" type="CharacterBody2D" unique_id=1836463466 node_paths=PackedStringArray("animacion")]
 collision_layer = 4
@@ -18,8 +19,8 @@ position = Vector2(4.9999995, -6.9999995)
 scale = Vector2(0.2, 0.2)
 sprite_frames = ExtResource("1_mhjfq")
 animation = &"andar"
-frame_progress = 0.828672
+frame_progress = 0.6849792
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1791040850]
-position = Vector2(0.5, 0.75)
-shape = SubResource("RectangleShape2D_mhjfq")
+position = Vector2(3, -1)
+shape = SubResource("CapsuleShape2D_dgefs")

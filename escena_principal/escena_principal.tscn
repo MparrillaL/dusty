@@ -8,4 +8,4 @@
 zoom = Vector2(1.42, 1.42)
 
 [node name="Nivel1" parent="." unique_id=535899594 instance=ExtResource("1_viuk4")]
-position = Vector2(-417, -374)
+position = Vector2(-421, -367)

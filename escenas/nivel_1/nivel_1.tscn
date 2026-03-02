@@ -9,7 +9,7 @@ height = 1450.7494
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_wpukg"]
 a = Vector2(-66, 98)
-b = Vector2(436, 98)
+b = Vector2(443, 98)
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_bfali"]
 b = Vector2(810.88403, 223.1922)
@@ -19,7 +19,14 @@ a = Vector2(-7, 11)
 b = Vector2(155, 11)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ahhdk"]
-size = Vector2(7.5, 51)
+size = Vector2(7.75, 51)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wpukg"]
+radius = 31.016125
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wpukg"]
+radius = 7.0
+height = 62.0
 
 [node name="Nivel1" type="StaticBody2D" unique_id=1090349578]
 
@@ -46,29 +53,9 @@ shape = SubResource("SegmentShape2D_bfali")
 position = Vector2(867, 388)
 shape = SubResource("SegmentShape2D_dn0x7")
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="." unique_id=715050061]
-position = Vector2(219, 346)
-shape = SubResource("RectangleShape2D_ahhdk")
-
 [node name="Dusty" parent="." unique_id=1836463466 instance=ExtResource("2_ahhdk")]
 position = Vector2(218, 292)
 collision_mask = 1
-
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="." unique_id=1243704610]
-position = Vector2(635, 345)
-shape = SubResource("RectangleShape2D_ahhdk")
-
-[node name="CollisionShape2D7" type="CollisionShape2D" parent="." unique_id=1664259638]
-position = Vector2(518, 345)
-shape = SubResource("RectangleShape2D_ahhdk")
-
-[node name="CollisionShape2D8" type="CollisionShape2D" parent="." unique_id=147329645]
-position = Vector2(744, 379)
-shape = SubResource("RectangleShape2D_ahhdk")
-
-[node name="CollisionShape2D9" type="CollisionShape2D" parent="." unique_id=1005074776]
-position = Vector2(857, 417)
-shape = SubResource("RectangleShape2D_ahhdk")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="." unique_id=24097144]
 position = Vector2(1320, 2070)
@@ -81,3 +68,27 @@ shape = SubResource("RectangleShape2D_ahhdk")
 [node name="CollisionShape2D12" type="CollisionShape2D" parent="." unique_id=1823557841]
 position = Vector2(1760, 2760)
 shape = SubResource("RectangleShape2D_ahhdk")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="." unique_id=450633180]
+position = Vector2(371, 326)
+shape = SubResource("CircleShape2D_wpukg")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="." unique_id=1469388205]
+position = Vector2(220, 352)
+shape = SubResource("CapsuleShape2D_wpukg")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="." unique_id=228317997]
+position = Vector2(857, 423)
+shape = SubResource("CapsuleShape2D_wpukg")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="." unique_id=1177969777]
+position = Vector2(742, 385)
+shape = SubResource("CapsuleShape2D_wpukg")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="." unique_id=757065985]
+position = Vector2(635, 352)
+shape = SubResource("CapsuleShape2D_wpukg")
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="." unique_id=857779060]
+position = Vector2(518, 352)
+shape = SubResource("CapsuleShape2D_wpukg")

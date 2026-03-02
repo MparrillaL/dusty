@@ -1,8 +1,8 @@
 [gd_resource type="SpriteFrames" format=3 uid="uid://bwt508mv37ldc"]
 
-[ext_resource type="Texture2D" uid="uid://cht7lxjd3p8j7" path="res://sprites/walk.png" id="1_pjsx5"]
+[ext_resource type="Texture2D" uid="uid://cb0a0wl123d1x" path="res://sprites/RATA ANDANDO SPRITES 2.png" id="1_pjsx5"]
 [ext_resource type="Texture2D" uid="uid://0c7o4sh0qumn" path="res://sprites/idle.png" id="2_k7ppq"]
-[ext_resource type="Texture2D" uid="uid://i0h6q3nb8heu" path="res://sprites/jump.png" id="3_b34pl"]
+[ext_resource type="Texture2D" uid="uid://i0h6q3nb8heu" path="res://sprites/RATA SALTANDO.png" id="3_pjsx5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r45bw"]
 atlas = ExtResource("1_pjsx5")
@@ -10,85 +10,49 @@ region = Rect2(0, 0, 768, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ed56e"]
 atlas = ExtResource("1_pjsx5")
-region = Rect2(768, 0, 768, 448)
+region = Rect2(1536, 0, 768, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ndgge"]
 atlas = ExtResource("1_pjsx5")
-region = Rect2(1536, 0, 768, 448)
+region = Rect2(0, 448, 768, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p00js"]
 atlas = ExtResource("1_pjsx5")
-region = Rect2(2304, 0, 768, 448)
+region = Rect2(0, 896, 768, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_on758"]
 atlas = ExtResource("1_pjsx5")
-region = Rect2(0, 448, 768, 448)
+region = Rect2(1536, 896, 768, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mxwff"]
 atlas = ExtResource("1_pjsx5")
-region = Rect2(2304, 448, 768, 448)
+region = Rect2(0, 1344, 768, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xtf2i"]
 atlas = ExtResource("1_pjsx5")
-region = Rect2(0, 896, 768, 448)
+region = Rect2(768, 1344, 768, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cedpe"]
 atlas = ExtResource("1_pjsx5")
-region = Rect2(768, 896, 768, 448)
+region = Rect2(2304, 1344, 768, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_snbh0"]
 atlas = ExtResource("1_pjsx5")
-region = Rect2(1536, 896, 768, 448)
+region = Rect2(0, 1792, 768, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q701d"]
 atlas = ExtResource("1_pjsx5")
-region = Rect2(2304, 896, 768, 448)
+region = Rect2(1536, 1792, 768, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ft8pg"]
 atlas = ExtResource("1_pjsx5")
-region = Rect2(0, 1344, 768, 448)
+region = Rect2(0, 2240, 768, 448)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gpksl"]
 atlas = ExtResource("1_pjsx5")
-region = Rect2(768, 1344, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wwhcs"]
-atlas = ExtResource("1_pjsx5")
-region = Rect2(2304, 1344, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_iedor"]
-atlas = ExtResource("1_pjsx5")
-region = Rect2(0, 1792, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4v0ra"]
-atlas = ExtResource("1_pjsx5")
-region = Rect2(768, 1792, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fxd3j"]
-atlas = ExtResource("1_pjsx5")
-region = Rect2(1536, 1792, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mkrot"]
-atlas = ExtResource("1_pjsx5")
-region = Rect2(2304, 1792, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5joiy"]
-atlas = ExtResource("1_pjsx5")
-region = Rect2(0, 2240, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l5w7l"]
-atlas = ExtResource("1_pjsx5")
-region = Rect2(768, 2240, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_vc2gb"]
-atlas = ExtResource("1_pjsx5")
 region = Rect2(1536, 2240, 768, 448)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hyem1"]
-atlas = ExtResource("1_pjsx5")
-region = Rect2(2304, 2240, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_auwua"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwhcs"]
 atlas = ExtResource("1_pjsx5")
 region = Rect2(0, 2688, 768, 448)
 
@@ -152,21 +116,13 @@ region = Rect2(2352, 1792, 784, 448)
 atlas = ExtResource("2_k7ppq")
 region = Rect2(0, 2240, 784, 448)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_p57p4"]
-atlas = ExtResource("3_b34pl")
-region = Rect2(1536, 0, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p0tkx"]
-atlas = ExtResource("3_b34pl")
-region = Rect2(2304, 448, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5okmq"]
-atlas = ExtResource("3_b34pl")
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7ppq"]
+atlas = ExtResource("3_pjsx5")
 region = Rect2(1536, 448, 768, 448)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4jeun"]
-atlas = ExtResource("3_b34pl")
-region = Rect2(768, 448, 768, 448)
+[sub_resource type="AtlasTexture" id="AtlasTexture_b34pl"]
+atlas = ExtResource("3_pjsx5")
+region = Rect2(1536, 0, 768, 448)
 
 [resource]
 animations = [{
@@ -209,37 +165,10 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_wwhcs")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_iedor")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4v0ra")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fxd3j")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mkrot")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5joiy")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l5w7l")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_vc2gb")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hyem1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_auwua")
 }],
 "loop": true,
 "name": &"andar",
-"speed": 10.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -293,18 +222,12 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_p57p4")
+"texture": SubResource("AtlasTexture_k7ppq")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_p0tkx")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5okmq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4jeun")
+"texture": SubResource("AtlasTexture_b34pl")
 }],
 "loop": true,
 "name": &"salto",
-"speed": 7.0
+"speed": 4.0
 }]
