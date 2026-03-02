@@ -4,8 +4,5 @@
 
 [node name="Node2D" type="Node2D" unique_id=1357486784]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1367184527]
-zoom = Vector2(1.42, 1.42)
-
 [node name="Nivel1" parent="." unique_id=535899594 instance=ExtResource("1_viuk4")]
 position = Vector2(-421, -367)
