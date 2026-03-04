@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://cmpkie0qw75jd"]
+
+[ext_resource type="Script" uid="uid://bt2ibvxgpuin8" path="res://Scripts/menu.gd" id="1_2owot"]
+[ext_resource type="Texture2D" uid="uid://upn4saqleu5u" path="res://art/QUESO_SIN_FONDO_NI_LETRAS-removebg-preview.png" id="1_d7r87"]
+[ext_resource type="Texture2D" uid="uid://cvayb440uw4yl" path="res://art/Fondo menu.jpeg" id="2_6cq3m"]
+
+[node name="Menu" type="Control" unique_id=367222335]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2owot")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=391460115]
+layout_mode = 0
+offset_left = -56.0
+offset_top = -7.0
+offset_right = 1246.0
+offset_bottom = 1023.0
+texture = ExtResource("2_6cq3m")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=259764306]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 18.0
+offset_right = 1157.0
+offset_bottom = 665.0
+texture = ExtResource("1_d7r87")
+
+[node name="Resume game" type="Button" parent="TextureRect" unique_id=1695408908]
+layout_mode = 0
+offset_left = 398.0
+offset_top = 146.0
+offset_right = 663.0
+offset_bottom = 204.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "RESUME GAME"
+
+[node name="Inventory" type="Button" parent="TextureRect" unique_id=879318895]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 219.0
+offset_right = 664.0
+offset_bottom = 277.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "INVENTORY"
+
+[node name="Settings" type="Button" parent="TextureRect" unique_id=266747830]
+layout_mode = 0
+offset_left = 402.0
+offset_top = 292.0
+offset_right = 664.0
+offset_bottom = 350.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "SETTINGS"
+
+[node name="Exit" type="Button" parent="TextureRect" unique_id=1203267503]
+layout_mode = 0
+offset_left = 404.0
+offset_top = 361.0
+offset_right = 667.0
+offset_bottom = 419.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 31
+text = "EXIT"
+
+[connection signal="pressed" from="TextureRect/Resume game" to="." method="_on_resume_game_pressed"]
+[connection signal="pressed" from="TextureRect/Inventory" to="." method="_on_inventory_pressed"]
+[connection signal="pressed" from="TextureRect/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="TextureRect/Exit" to="." method="_on_exit_pressed"]
