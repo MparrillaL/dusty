@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cuft3xtnc46r7"]
+
+[ext_resource type="Texture2D" uid="uid://bblx0vwqakxuv" path="res://art/MONEDA QUESO OK.png" id="1_wj2lf"]
+[ext_resource type="Script" uid="uid://ckd83358ombe7" path="res://escenas/moneda/moneda.gd" id="1_ypcej"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ml8qm"]
+radius = 12.0415945
+
+[node name="moneda" type="Node2D" unique_id=1371336752 node_paths=PackedStringArray("area_2d")]
+script = ExtResource("1_ypcej")
+area_2d = NodePath("Area2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2095676505]
+position = Vector2(291.87497, 199.25)
+scale = Vector2(0.0432129, 0.03857422)
+texture = ExtResource("1_wj2lf")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1420099661]
+position = Vector2(-1, 0)
+collision_layer = 8
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=793767657]
+position = Vector2(293, 199)
+shape = SubResource("CircleShape2D_ml8qm")
