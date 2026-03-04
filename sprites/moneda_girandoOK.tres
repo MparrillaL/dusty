@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://bneuhca1070vu"]
+
+[ext_resource type="Texture2D" uid="uid://fnawf3onh8ig" path="res://sprites/MONEDA GIRANDO OK.png" id="1_um15q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwbya"]
+atlas = ExtResource("1_um15q")
+region = Rect2(0, 0, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_45mu8"]
+atlas = ExtResource("1_um15q")
+region = Rect2(682, 0, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vk2gv"]
+atlas = ExtResource("1_um15q")
+region = Rect2(341, 341, 341, 341)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0vy4x"]
+atlas = ExtResource("1_um15q")
+region = Rect2(341, 682, 341, 341)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwbya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_45mu8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vk2gv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0vy4x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cls76jaet6oal"
-path="res://.godot/imported/MONEDA GIRANDO.png-1f5d5830452f08c352e212405ec31b44.ctex"
+uid="uid://fnawf3onh8ig"
+path="res://.godot/imported/MONEDA GIRANDO OK.png-5e9c836c2dc09ec2a6f9901f67da9a34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/MONEDA GIRANDO.png"
-dest_files=["res://.godot/imported/MONEDA GIRANDO.png-1f5d5830452f08c352e212405ec31b44.ctex"]
+source_file="res://sprites/MONEDA GIRANDO OK.png"
+dest_files=["res://.godot/imported/MONEDA GIRANDO OK.png-5e9c836c2dc09ec2a6f9901f67da9a34.ctex"]
 
 [params]
 

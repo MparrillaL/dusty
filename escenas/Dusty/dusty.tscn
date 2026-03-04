@@ -18,7 +18,8 @@ texture_filter = 2
 position = Vector2(4.9999995, -6.9999995)
 scale = Vector2(0.2, 0.2)
 sprite_frames = ExtResource("1_mhjfq")
-animation = &"andar"
+animation = &"idle"
+frame_progress = 0.8449378
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1791040850]
 position = Vector2(3, -1)

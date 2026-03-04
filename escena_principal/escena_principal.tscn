@@ -9,4 +9,4 @@
 position = Vector2(-421, -367)
 
 [node name="moneda" parent="." unique_id=1371336752 instance=ExtResource("2_plhmg")]
-position = Vector2(-200, -294)
+position = Vector2(-137, -162)
