@@ -4,9 +4,12 @@ extends CharacterBody2D
 
 var _velocidad: float = 100.0
 var _velocidad_salto: float = -300.0
+var monedas: int = 0
+	# monedas
+func sumar_moneda():
+	monedas += 1
 
 func _physics_process(delta):
-
 	# gravedad
 	velocity += get_gravity() * delta
 
