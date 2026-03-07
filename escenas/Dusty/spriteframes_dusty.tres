@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cb0a0wl123d1x" path="res://sprites/RATA ANDANDO SPRITES 2.png" id="1_pjsx5"]
 [ext_resource type="Texture2D" uid="uid://biuh1onwd8q2p" path="res://sprites/RATA IDLE SPRITES 2.png" id="2_pjsx5"]
-[ext_resource type="Texture2D" uid="uid://i0h6q3nb8heu" path="res://sprites/RATA SALTANDO.png" id="3_pjsx5"]
+[ext_resource type="Texture2D" uid="uid://bshyb13mq6pgn" path="res://sprites/RATA SALTANDO 3 OK.png" id="3_pjsx5"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_r45bw"]
 atlas = ExtResource("1_pjsx5")
@@ -120,13 +120,13 @@ region = Rect2(1568, 1792, 784, 448)
 atlas = ExtResource("2_pjsx5")
 region = Rect2(2352, 1792, 784, 448)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_pjsx5"]
+atlas = ExtResource("3_pjsx5")
+region = Rect2(784, 0, 784, 384)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_k7ppq"]
 atlas = ExtResource("3_pjsx5")
-region = Rect2(1536, 448, 768, 448)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_b34pl"]
-atlas = ExtResource("3_pjsx5")
-region = Rect2(1536, 0, 768, 448)
+region = Rect2(2352, 0, 784, 384)
 
 [resource]
 animations = [{
@@ -229,12 +229,12 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_k7ppq")
+"texture": SubResource("AtlasTexture_pjsx5")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_b34pl")
+"texture": SubResource("AtlasTexture_k7ppq")
 }],
-"loop": true,
+"loop": false,
 "name": &"salto",
-"speed": 4.0
+"speed": 8.0
 }]

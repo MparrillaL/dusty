@@ -7,19 +7,24 @@
 radius = 8.0
 height = 48.5
 
-[node name="Dusty" type="CharacterBody2D" unique_id=1836463466 node_paths=PackedStringArray("animacion") groups=["jugador"]]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgefs"]
+size = Vector2(39, 48)
+
+[node name="Dusty" type="CharacterBody2D" unique_id=1836463466 node_paths=PackedStringArray("animacion", "area_2d") groups=["jugador"]]
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("1_dgefs")
 animacion = NodePath("animacion")
+area_2d = NodePath("Area2D")
 
 [node name="animacion" type="AnimatedSprite2D" parent="." unique_id=286345957]
 texture_filter = 2
 position = Vector2(4.9999995, -6.9999995)
 scale = Vector2(0.2, 0.2)
 sprite_frames = ExtResource("1_mhjfq")
-animation = &"idle"
-frame_progress = 0.8449378
+animation = &"salto"
+frame = 1
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1791040850]
 position = Vector2(3, -1)
@@ -27,3 +32,13 @@ shape = SubResource("CapsuleShape2D_dgefs")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=947735557]
 zoom = Vector2(1.945, 1.945)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=757490881]
+collision_layer = 4
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1989501969]
+position = Vector2(13.5, -1)
+shape = SubResource("RectangleShape2D_dgefs")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

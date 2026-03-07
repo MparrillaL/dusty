@@ -28,6 +28,11 @@ radius = 31.016125
 radius = 7.0
 height = 62.0
 
+[sub_resource type="GDScript" id="GDScript_ahhdk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bfali"]
+size = Vector2(905, 247)
+
 [node name="Nivel1" type="StaticBody2D" unique_id=1090349578]
 
 [node name="MegaTuberia1" type="Sprite2D" parent="." unique_id=1969507613]
@@ -54,7 +59,7 @@ position = Vector2(867, 388)
 shape = SubResource("SegmentShape2D_dn0x7")
 
 [node name="Dusty" parent="." unique_id=1836463466 instance=ExtResource("2_ahhdk")]
-position = Vector2(218, 292)
+position = Vector2(257, 296)
 collision_mask = 1
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="." unique_id=24097144]
@@ -78,11 +83,11 @@ position = Vector2(220, 352)
 shape = SubResource("CapsuleShape2D_wpukg")
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="." unique_id=228317997]
-position = Vector2(857, 423)
+position = Vector2(854, 423)
 shape = SubResource("CapsuleShape2D_wpukg")
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="." unique_id=1177969777]
-position = Vector2(742, 385)
+position = Vector2(741, 386)
 shape = SubResource("CapsuleShape2D_wpukg")
 
 [node name="CollisionShape2D9" type="CollisionShape2D" parent="." unique_id=757065985]
@@ -92,3 +97,12 @@ shape = SubResource("CapsuleShape2D_wpukg")
 [node name="CollisionShape2D13" type="CollisionShape2D" parent="." unique_id=857779060]
 position = Vector2(518, 352)
 shape = SubResource("CapsuleShape2D_wpukg")
+
+[node name="kill_zone" type="Area2D" parent="." unique_id=1150562759]
+collision_layer = 2
+collision_mask = 4
+script = SubResource("GDScript_ahhdk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="kill_zone" unique_id=746790406]
+position = Vector2(1182, 723)
+shape = SubResource("RectangleShape2D_bfali")
