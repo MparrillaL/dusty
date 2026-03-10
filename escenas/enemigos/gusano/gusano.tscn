@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dwuhp0ix7me04"]
+
+[ext_resource type="SpriteFrames" uid="uid://b3rehunvy6w8" path="res://escenas/enemigos/gusano/gusanos.tres" id="1_vygas"]
+[ext_resource type="Script" uid="uid://bgr8dug2vhufg" path="res://escenas/enemigos/gusano/gusano.gd" id="1_weees"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_38lc2"]
+radius = 7.0
+height = 26.0
+
+[node name="gusano" type="CharacterBody2D" unique_id=1762066987]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_weees")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=266850288]
+position = Vector2(0, 0.19999924)
+scale = Vector2(0.199, 0.2)
+sprite_frames = ExtResource("1_vygas")
+animation = &"andar"
+frame_progress = 0.60354674
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1980784153]
+position = Vector2(-3, 1)
+shape = SubResource("CapsuleShape2D_38lc2")

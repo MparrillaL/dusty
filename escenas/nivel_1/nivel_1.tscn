@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://ck0vpeqej1uyy" path="res://art/MEGA TUBERIA 1.png" id="1_7dyb3"]
 [ext_resource type="PackedScene" uid="uid://etls8tbq7fqb" path="res://escenas/Dusty/dusty.tscn" id="2_ahhdk"]
+[ext_resource type="PackedScene" uid="uid://dwuhp0ix7me04" path="res://escenas/enemigos/gusano/gusano.tscn" id="3_wpukg"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ahhdk"]
 radius = 58.706543
@@ -106,3 +107,6 @@ script = SubResource("GDScript_ahhdk")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="kill_zone" unique_id=746790406]
 position = Vector2(1182, 723)
 shape = SubResource("RectangleShape2D_bfali")
+
+[node name="gusano" parent="." unique_id=1762066987 instance=ExtResource("3_wpukg")]
+position = Vector2(958, 383)

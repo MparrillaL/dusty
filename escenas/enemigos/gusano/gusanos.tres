@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://b3rehunvy6w8"]
+
+[ext_resource type="Texture2D" uid="uid://djduyf8x33rva" path="res://sprites/GUSANO ANDANDO SPRITES.png" id="1_iv1wn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iv1wn"]
+atlas = ExtResource("1_iv1wn")
+region = Rect2(0, 0, 256, 204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2i63a"]
+atlas = ExtResource("1_iv1wn")
+region = Rect2(0, 0, 256, 204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iud78"]
+atlas = ExtResource("1_iv1wn")
+region = Rect2(256, 0, 256, 204)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qiy3h"]
+atlas = ExtResource("1_iv1wn")
+region = Rect2(512, 0, 256, 204)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iv1wn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2i63a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iud78")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qiy3h")
+}],
+"loop": true,
+"name": &"andar",
+"speed": 8.0
+}]
