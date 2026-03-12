@@ -16,15 +16,15 @@ collision_mask = 0
 script = ExtResource("1_dgefs")
 animacion = NodePath("animacion")
 area_2d = NodePath("Area2D")
+multiplicador_sprint = 2.0
 
 [node name="animacion" type="AnimatedSprite2D" parent="." unique_id=286345957]
 texture_filter = 2
 position = Vector2(4.9999995, -6.9999995)
 scale = Vector2(0.2, 0.2)
 sprite_frames = ExtResource("1_mhjfq")
-animation = &"salto"
-frame = 1
-frame_progress = 1.0
+animation = &"caer"
+frame_progress = 0.22877765
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1791040850]
 position = Vector2(3, -1)
