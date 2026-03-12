@@ -2,35 +2,41 @@ extends CharacterBody2D
 
 @export var animacion: AnimatedSprite2D
 @export var area_2d: Area2D
-var _velocidad: float = 100.0
-var _velocidad_salto: float = -300.0
+@export_group("Movimiento")
+@export_range(0.0, 1000.0, 10.0) var velocidad: float = 100.0
+@export_range(0.0, 2000.0, 10.0) var velocidad_salto: float = 300.0
+
+const EPSILON_MOVIMIENTO := 0.01
+
 var monedas: int = 0
 
-func _ready():
-	pass
+func _ready() -> void:
+	if animacion == null:
+		push_warning("No se asignó AnimatedSprite2D en 'animacion'.")
 
-	# monedas
-func sumar_moneda():
+
+func sumar_moneda() -> void:
 	monedas += 1
-	
-	
 
-func _physics_process(delta):
+
+func _physics_process(delta: float) -> void:
 	# gravedad
 	velocity += get_gravity() * delta
 
 	# salto
 	if Input.is_action_just_pressed("salto") and is_on_floor():
-		velocity.y = _velocidad_salto
-		animacion.play("salto")
+		velocity.y = -velocidad_salto
+		_play_anim_if_needed("salto")
 
 	# movimiento lateral
 	if Input.is_action_pressed("izquierda"):
-		velocity.x = -_velocidad
-		animacion.flip_h = true
+		velocity.x = -velocidad
+		if animacion:
+			animacion.flip_h = true
 	elif Input.is_action_pressed("derecha"):
-		velocity.x = _velocidad
-		animacion.flip_h = false
+		velocity.x = velocidad
+		if animacion:
+			animacion.flip_h = false
 	else:
 		velocity.x = 0
 
@@ -43,26 +49,31 @@ func _physics_process(delta):
 	# 1. Si está en el aire → salto o caída
 	if !is_on_floor():
 		if velocity.y < 0:
-			# subiendo
-			if animacion.animation != "salto":
-				animacion.play("salto")
+			_play_anim_if_needed("salto")
 		else:
-			# bajando
-			if animacion.animation != "caer":
-				animacion.play("caer")
+			_play_anim_if_needed("caer")
 		return  # IMPORTANTE: evita que se reproduzcan otras animaciones
 
 	# 2. Si está en el suelo → idle o andar
-	if velocity.x == 0:
-		if animacion.animation != "idle":
-			animacion.play("idle")
+	if abs(velocity.x) < EPSILON_MOVIMIENTO:
+		_play_anim_if_needed("idle")
 	else:
-		if animacion.animation != "andar":
-			animacion.play("andar")
+		_play_anim_if_needed("andar")
 
-	# muerte 
-func die():
-	var sprite = $animacion
+
+func _play_anim_if_needed(nombre_animacion: StringName) -> void:
+	if animacion == null:
+		return
+	if animacion.animation != nombre_animacion:
+		animacion.play(nombre_animacion)
+
+
+func die() -> void:
+	if animacion == null:
+		get_tree().reload_current_scene()
+		return
+
+	var sprite := animacion
 	var original_scale = sprite.scale
 
 	set_physics_process(false)
@@ -93,8 +104,8 @@ func die():
 	t.tween_callback(func():
 		get_tree().reload_current_scene()
 		)
-	
-	
-func _on_area_2d_area_entered(area):
+
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.name == "kill_zone":
 		die()  # o la función que uses para matar/reiniciar
