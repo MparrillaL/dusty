@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://d4kmucoa073l8"]
+
+[ext_resource type="Texture2D" uid="uid://b0o2d8wnsfiau" path="res://art/CARA DUSTY.png" id="1_adsit"]
+[ext_resource type="Texture2D" uid="uid://dw76opf838qfv" path="res://art/ratybel.png" id="2_up6ai"]
+
+[node name="Control" type="Control" unique_id=628057279]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = -1.0
+offset_right = 2.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=1972854737]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="HUDDusty" type="Sprite2D" parent="." unique_id=1799986517]
+position = Vector2(66, 64)
+scale = Vector2(0.2525, 0.22350001)
+texture = ExtResource("1_adsit")
+
+[node name="HUDRatybel" type="Sprite2D" parent="." unique_id=2099253366]
+position = Vector2(161, 43.999992)
+scale = Vector2(0.11649998, 0.099)
+texture = ExtResource("2_up6ai")
+
+[node name="HUDRatybel" type="Sprite2D" parent="HUDRatybel" unique_id=251866695]
+position = Vector2(806.8671, -3.528595e-05)
+scale = Vector2(0.98742497, 0.9595958)
+texture = ExtResource("2_up6ai")
+
+[node name="HUDRatybel2" type="Sprite2D" parent="HUDRatybel" unique_id=1925185675]
+position = Vector2(394.84976, -10.101025)
+scale = Vector2(0.987032, 0.9822523)
+texture = ExtResource("2_up6ai")

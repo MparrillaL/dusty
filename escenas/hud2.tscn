@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bwoxvoj1ql3wt"]
+
+[ext_resource type="Texture2D" uid="uid://b0o2d8wnsfiau" path="res://art/CARA DUSTY.png" id="1_cocuo"]
+[ext_resource type="Texture2D" uid="uid://dw76opf838qfv" path="res://art/ratybel.png" id="2_mm6b3"]
+
+[node name="HUD" type="MarginContainer" unique_id=917702873]
+offset_right = 448.0
+offset_bottom = 161.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1194428296]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer" unique_id=881559405]
+layout_mode = 2
+texture = ExtResource("1_cocuo")
+expand_mode = 2
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer" unique_id=2089879803]
+layout_mode = 2
+texture = ExtResource("2_mm6b3")

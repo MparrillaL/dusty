@@ -10,3 +10,9 @@ position = Vector2(-421, -367)
 
 [node name="moneda" parent="." unique_id=1371336752 instance=ExtResource("2_plhmg")]
 position = Vector2(-137, -162)
+
+[node name="Control" type="Control" parent="." unique_id=737776675]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
