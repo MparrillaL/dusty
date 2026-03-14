@@ -19,6 +19,7 @@ const EPSILON_MOVIMIENTO := 0.01
 var monedas: int = 0
 var vel_actual: float = 0.0
 var ha_saltado := false   # ← evita animaciones de salto falsas
+var salto_con_sprint := false
 
 
 func _physics_process(delta: float) -> void:
@@ -27,6 +28,7 @@ func _physics_process(delta: float) -> void:
 
 	# salto
 	if Input.is_action_just_pressed("salto") and is_on_floor():
+		salto_con_sprint = Input.is_action_pressed("sprint")
 		velocity.y = -velocidad_salto
 		ha_saltado = true
 		_play_anim_if_needed("salto")
@@ -55,9 +57,10 @@ func _physics_process(delta: float) -> void:
 	# Aceleración estilo Hollow Knight
 	var acel := aceleracion_suelo if is_on_floor() else aceleracion_aire
 	var desacel := desaceleracion_suelo if is_on_floor() else desaceleracion_aire
+	var vel_objetivo := vel_actual if is_on_floor() else velocidad * (multiplicador_sprint if salto_con_sprint else 1.0)
 
 	if input_dir != 0:
-		velocity.x = move_toward(velocity.x, input_dir * vel_actual, acel * delta)
+		velocity.x = move_toward(velocity.x, input_dir * vel_objetivo, acel * delta)
 	else:
 		velocity.x = move_toward(velocity.x, 0, desacel * delta)
 
@@ -66,6 +69,7 @@ func _physics_process(delta: float) -> void:
 	# Reset del salto al tocar suelo
 	if is_on_floor():
 		ha_saltado = false
+		salto_con_sprint = false
 
 	# -------------------------
 	# SISTEMA DE ANIMACIONES

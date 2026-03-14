@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cpkcotb1jq6at"]
 
-[ext_resource type="Texture2D" uid="uid://ck0vpeqej1uyy" path="res://art/PLATAFORMAS/TUBERIAS/MEGA TUBERIA 1.png" id="1_7dyb3"]
+[ext_resource type="Texture2D" uid="uid://ck0vpeqej1uyy" path="res://art/MEGA TUBERIA 1.png" id="1_7dyb3"]
 [ext_resource type="PackedScene" uid="uid://etls8tbq7fqb" path="res://escenas/Dusty/dusty.tscn" id="2_ahhdk"]
 [ext_resource type="PackedScene" uid="uid://dwuhp0ix7me04" path="res://escenas/enemigos/gusano/gusano.tscn" id="3_wpukg"]
 [ext_resource type="Texture2D" uid="uid://bak1i5y1p5kji" path="res://art/PLATAFORMAS/TUBERIAS/MEGA TUBERIA 7.png" id="6_rvocm"]
@@ -66,8 +66,6 @@ size = Vector2(7323, 219.5)
 z_index = 10
 position = Vector2(257, 296)
 collision_mask = 1
-velocidad = null
-velocidad_salto = null
 
 [node name="MegaTuberia1" type="Sprite2D" parent="." unique_id=1969507613]
 position = Vector2(566.00006, 313.00003)
